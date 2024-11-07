@@ -13,7 +13,15 @@
       nixosConfigurations = {
         nixter = lib.nixosSystem {
           inherit system;
-          modules = [./configuration.nix];
+          modules = [./hosts/main/configuration.nix];
+        };
+        maxter = lib.nixosSystem {
+          inherit system;
+          modules = [./hosts/mac/configuration.nix];
+        };
+        nixters-lab = lib.nixosSystem {
+          inherit system;
+          modules = [./hosts/homeserver/configuration.nix];
         };
       };
     };
