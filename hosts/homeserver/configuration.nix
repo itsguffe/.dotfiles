@@ -6,7 +6,7 @@
       ./hardware-configuration.nix
       ../../system/locale.nix
       ../../users/guffe.nix
-      ../../system/apps/general.nix
+      ../../system/general.nix
     ];
 
   networking.hostName = "nixters-lab";
