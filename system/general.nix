@@ -11,10 +11,19 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+    fzf
     nix-ld
     neovim
+    kitty
     unrar
   ];
+
+  fonts.packages = with pkgs; [
+    font-awesome
+  ];
+
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
 
   nix = {
     settings = {
