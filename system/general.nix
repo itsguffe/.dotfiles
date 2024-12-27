@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{config, pkgs, nixvim, ...}:
 
 {
   boot.loader.systemd-boot.enable = true;
@@ -8,12 +8,16 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.overlays = [
+    nixvim.overlays.default
+  ];
+
   environment.systemPackages = with pkgs; [
     vim
     git
     fzf
     nix-ld
-    neovim
+    nvim-pkg
     kitty
     unrar
   ];
