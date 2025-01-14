@@ -3,7 +3,6 @@
   description = "System flake";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    nixvim.url = "github:itsguffe/nixvim/main";
   };
   outputs = { self, nixpkgs,  ... }@attrs :
     let
