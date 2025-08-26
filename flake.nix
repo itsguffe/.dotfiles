@@ -16,6 +16,11 @@
 	  specialArgs = attrs;
           modules = [./hosts/main/configuration.nix];
         };
+        nixtest = lib.nixosSystem {
+          inherit system;
+	  specialArgs = attrs;
+          modules = [./hosts/test/configuration.nix];
+        };
         maxter = lib.nixosSystem {
           inherit system;
 	  specialArgs = attrs;
