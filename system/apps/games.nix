@@ -16,6 +16,10 @@
     };
   };
 
+  environment.systemPackages = [
+    pkgs.runelite
+    pkgs.lutris
+  ];
   services.flatpak.enable = true;
   programs.gamemode.enable = true;
 }

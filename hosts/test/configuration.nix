@@ -38,6 +38,8 @@
     nextcloud-client
     mpv
     qmk
+dotnetCorePackages.sdk_9_0-bin
+claude-code
   ];
 
   system.stateVersion = "24.05";
