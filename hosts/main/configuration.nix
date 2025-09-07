@@ -24,7 +24,6 @@
   drivers.amdgpu.enable = true;
 
   environment.systemPackages = with pkgs; [
-    nextcloud-client
     mpv
     qmk
   ];
