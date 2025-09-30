@@ -30,6 +30,10 @@
           inherit system;
           modules = [./hosts/homeserver/configuration.nix];
         };
+	nixters-usb = nixpkgs.lib.nixosSystem {
+          inherit system;
+          modules = [./hosts/isoimage/configuration.nix];
+        };
       };
     };
 }

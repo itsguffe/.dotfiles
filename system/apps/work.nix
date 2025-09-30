@@ -3,7 +3,9 @@
 {
   environment.systemPackages = with pkgs; [
     networkmanager
-    networkmanager-openvpn
-    freerdp3
+    remmina
+  ];
+  networking.networkmanager.plugins = [
+    pkgs.networkmanager-openvpn
   ];
 }

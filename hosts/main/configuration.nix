@@ -4,7 +4,6 @@
   imports =
     [
       ./hardware-configuration.nix
-      ../../system/general.nix
       ../../hardware/amd-drivers.nix
       ../../hardware/audio.nix
       ../../hardware/bluetooth.nix
